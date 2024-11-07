@@ -1,0 +1,16 @@
+def triangle_area(base, height):
+    return 0.5 * base * height
+# В параллелограмме ABCD, где E делит BD пополам
+# Площадь треугольника ABE
+base_AB = 1  # длина стороны AB
+height_ABE = 1  # высота от A к линии BE
+area_ABE = triangle_area(base_AB, height_ABE)
+
+# Площадь треугольника ECD
+base_CD = 1  # длина стороны CD (равна AB)
+height_ECD = 1  # высота от C к линии ED
+area_ECD = triangle_area(base_CD, height_ECD)
+
+# Отношение площадей
+ratio = area_ABE / area_ECD
+print("Отношение площадей треугольников ABE и ECD:", ratio)
