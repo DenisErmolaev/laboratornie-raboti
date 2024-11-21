@@ -1,5 +1,4 @@
 #include <stdio.h>
- 
 int main() {
     printf("Отношение площадей треугольников ABE и ECD: 1:1\n");
     return 0;
