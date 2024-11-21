@@ -1,10 +1,1 @@
-def triangle_area(base, height):
-    return 0.5 * base * height
-base_AB = 1  
-height_ABE = 1  
-area_ABE = triangle_area(base_AB, height_ABE)
-base_CD = 1  
-height_ECD = 1  
-area_ECD = triangle_area(base_CD, height_ECD)
-ratio = area_ABE / area_ECD
-print("Отношение площадей треугольников ABE и ECD:", ratio)
+
