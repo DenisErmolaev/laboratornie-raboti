@@ -1,0 +1,12 @@
+def age_grypa(age):
+    if age < 0:
+        return "невозможно "
+    elif age < 18:
+        return "детство и юность"
+    elif 19 <= age <= 60:
+        return "зрелость"
+    else:
+        return "пожилой возраст"
+age = int(input("Введите возраст человека: "))
+group = age_grypa(age)
+print(f"Возрастная группа: {group}")
