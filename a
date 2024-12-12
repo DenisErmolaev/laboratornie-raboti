@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int metalNomer;
+    cout << "Введите порядковый номер щелочного металла (3, 11, 19, 37, 55): ";
+    cin >> metalNomer;
+    if (metalNomer == 3) {
+        cout << "Цвет пламени: красный (литий)" << endl;
+    } else if (metalNomer == 11) {
+        cout << "Цвет пламени: желтый (натрий)" << endl;
+    } else if (metalNomer == 19) {
+        cout << "Цвет пламени: фиолетовый (калий)" << endl;
+    } else if (metalNomer == 37) {
+        cout << "Цвет пламени: красно-фиолетовый (рубидий)" << endl;
+    } else if (metalNomer == 55) {
+        cout << "Цвет пламени: голубой (цезий)" << endl;
+    } else {
+        cout << "неправильный металл" << endl;
+    }
+    return 0;
+}
