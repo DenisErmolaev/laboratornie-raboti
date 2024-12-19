@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Введите количество учащихся в классе: ";
+    cin >> n;
+
+    double totalHeight = 0;
+
+    for (int i = 1; i <= n; ++i) {
+        double height;
+        cout << "Введите рост " << i << "-го ученика (в см): ";
+        cin >> height;
+        totalHeight += height;
+    }
+
+    double averageHeight = totalHeight / n;
+    cout << "Средний рост учащихся класса: " << averageHeight << " см" << endl;
+
+    return 0;
+}
