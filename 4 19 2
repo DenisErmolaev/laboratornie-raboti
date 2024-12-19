@@ -1,0 +1,4 @@
+def a(n):
+    return sum(i for i in range(1, n // 2 + 1) if n % i == 0) == n
+sov_num = [n for n in range(1, 1001) if a(n)]
+print("Совершенные числа в интервале [1, 1000]:", sov_num)
