@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Введите количество чисел: ";
+    cin >> n;
+
+    int poloz = 0, otriz = 0, nol = 0;
+
+    for (int i = 1; i <= n; ++i) {
+        int number;
+        cout << "Введите число " << i << ": ";
+        cin >> number;
+
+        if (number > 0) {
+            ++poloz; 
+        } else if (number < 0) {
+            ++otriz; 
+        } else {
+            ++nol; 
+        }
+    }
+    cout << "Количество положительных чисел: " << poloz << endl;
+    cout << "Количество отрицательных чисел: " << otriz << endl;
+    cout << "Количество нулей: " << nol << endl;
+    return 0;
+}
