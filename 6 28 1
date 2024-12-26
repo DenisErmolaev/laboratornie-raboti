@@ -1,0 +1,12 @@
+numbers = []
+print("Введите числа по одному:")
+while True:
+    inputpolz = input()  
+    if inputpolz.lower() == 'stop':  
+        break  
+    try:
+        numbers.append(int(inputpolz))
+    except ValueError:
+        print("Пожалуйста, введите корректное число или 'stop' для завершения.")
+tsumatrex = sum(numbers[2::3])
+print("Сумма каждого третьего числа:", tsumatrex)
